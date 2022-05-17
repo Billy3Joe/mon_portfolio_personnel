@@ -432,7 +432,8 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        padding: 100px 170px;
+        padding: 50px 100px;
+        /* padding: 100px 170px; */
     }
     
     body .section_title,
