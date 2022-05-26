@@ -3,382 +3,293 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mon Portfolio</title>
-    <link rel="icon" type="image/png" href="images/Billy.jpg" hreflang="en-us">
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
-    <div id="site">
-        <div class="switch-wrapper">
-            </a>
-            <div class="sun"></div>
-            <div class="toggle-wrapper">
-                <input type="checkbox" id="switch" />
-                <label for="switch" id="switch1">Toggle</label>
+    <header class="clearfix">
+        <div class="container">
+            <div class="header-left">
+                <h1>Billy3Joe</h1>
             </div>
-            <div class="moon"></div>
+            <div class="header-right">
+                <label for="open">
+                        <span class="hidden-desktop"></span>
+                    </label>
+                <input type="checkbox" name="" id="open">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">projets</a>
+                    <a href="#">Compétentces</a>
+                    <a href="#">A propos</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
         </div>
-
-        <header class="intro" style="text-align: justify;">
-
-            <h1 class="intro_hello">
-                Salut!
-                <span id="wave" class="emoji wave-hand animated "></span>
-                <button class="custom-btn btn-7"><a href="contact.html" style="text-decoration: none;"><span>CONTACT</span></a></button>
-            </h1>
-            <h2 class="intro_tagline">
-                Je suis l'étudiant
-                <div class="myname">Kom Kamze Billy Joe</div>
-                en <strong style="color: #FFCB04;">Prépa Mastère CTO & Tech Lead</strong> à hetic.<br><br><br>
-                <div class="mytext">
-                    <div class="content">
-                        <div class=" container">
-                            <ul class="list">
-                                <li class="item"> Front End Developer.</li>
-                                <li class="item">Back End Developer. </li>
-                                <li class="item">Full Stack Developer. </li>
-                            </ul>
-                        </div><br>
-                    </div>
-                </div>
-                <span>Je me suis concentré sur le développement et la conception de produits pour le Web, des simples pages de destination aux applications Web à part entière.
-			<span id="emojiwavehand" class="emoji technologist"></span>
-            </h2>
-            <h3 class="intro_contact">
-                <span>+33 6 95 34 52 30</span>
-                <span class="emoji pointer"></span>
-                <span id="emailme">
-				<a href="#link your email" target="_blank" class="highlight-link">billykamze3@gmail.com</a>
-			</span>
-            </h3>
+        <header class="presentation">
+            <img src="images/Billy2.png" alt="John Doe" class="profile-image">
+            <h1 class="tag name">Hello, I’m Billy Joe Kom Kamze.</h1>
+            <p class="tag location">DEVELOPPEUR WEB (FRONT-RND & BACK-END)</p>
         </header>
 
-        <section class="section background" style="box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;">
-            <div class="section_title">Background</div>
-            <div class="section_content">
-                <p>
-                    Après mon baccalauréat D de mathématique et science de la vie et de la terre,j'ai obtenu mon BTS en Gestion des Systèmes d'Information (GSI) avec mention bien à
-                    <a class="underline-link" href="#" target="_blank">
-					l'Institut Universitaire du Golfe de guinée (IUG) à Douala, Cameroun.</a>Pendant l'obtention de mon diplôme, j'ai effectué un stage de 2 mois au
-                    <a class="underline-link" href="#" target="_blank">Group Fokou Foberd.</a>Après avoir obtenu mon diplôme, j'ai fait 6 intensif mois de langue anglaise au
-                    <a class="underline-link" href="#" target="_blank">VITAC </a>
-                    <a class="underline-link" href="#" target="_blank"></a>Actuelleent je suis en Prépa Mastère CTO & Tech Lead à HETIC la grande école du web.
+    </header>
+    <style>
+        /* CSS DE LA PARTIE PRESENTATION */
+        
+        .presentation {
+            text-align: center;
+            background: url('https://placeimg.com/640/480/tech') no-repeat top center;
+            background-size: cover;
+            overflow: hidden;
+            padding-top: 60px;
+        }
+        
+        header {
+            line-height: 1.5;
+        }
+        
+        header .profile-image {
+            margin-top: 50px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            transition: all .5s;
+        }
+        
+        header .profile-image:hover {
+            transform: scale(1.2) rotate(5deg);
+        }
+        
+        .tag {
+            background-color: #efefef;
+            color: black;
+            padding: 10px;
+            display: table;
+            margin: 10px auto;
+        }
+        
+        .location {
+            background-color: #222;
+            color: yellow;
+        }
+    </style>
+
+
+    <aside class="loading">
+        <a href="projets.html" class="text">Mes projets</a>
+        <span class="border"></span>
+    </aside>
+    <style>
+        aside {
+            margin: auto;
+            width: 222px;
+            height: 52px;
+            margin-top: 50px;
+        }
+        
+        .loading {
+            background-color: #FF9800;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 3px;
+            -webkit-background-size: 130% 130%;
+            background-size: 130%;
+            -webkit-filter: hue-rotate(10deg);
+            height: 52px;
+            line-height: 46px;
+            color: white;
+            text-align: center;
+            position: relative;
+            bottom: 13px;
+        }
+        
+        .text,
+        .border {
+            cursor: pointer;
+            font-weight: lighter;
+            z-index: 5;
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            bottom: 2px;
+            right: 3px;
+            display: block;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            color: #000;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .text {
+            top: 4px;
+            text-decoration: none;
+        }
+        
+        .border {
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            color: #000;
+            clip: rect(0, 0, 0, 0);
+            -webkit-animation: maskBorder 5s infinite;
+            animation: maskBorder 5s infinite;
+        }
+        
+        .text:hover {
+            border: 3px solid #fff;
+            color: #fff;
+        }
+        
+        @-webkit-keyframes maskBorder {
+            0% {
+                clip: rect(0px, 1px, 1px, 0px)
+            }
+            12.5% {
+                clip: rect(0px, 1px, 52px, 0px)
+            }
+            25% {
+                clip: rect(51px, 1px, 52px, 0px)
+            }
+            37.5% {
+                clip: rect(51px, 221px, 52px, 0px)
+            }
+            50% {
+                clip: rect(51px, 221px, 52px, 219px)
+            }
+            62.5% {
+                clip: rect(0px, 221px, 52px, 219px)
+            }
+            75% {
+                clip: rect(0px, 221px, 1px, 219px)
+            }
+            87.5% {
+                clip: rect(0px, 221px, 1px, 0px)
+            }
+            100% {
+                clip: rect(0px, 1px, 1px, 0px)
+            }
+        }
+        
+        @keyframes maskBorder {
+            0% {
+                clip: rect(0px, 1px, 1px, 0px)
+            }
+            12.5% {
+                clip: rect(0px, 1px, 52px, 0px)
+            }
+            25% {
+                clip: rect(51px, 1px, 52px, 0px)
+            }
+            37.5% {
+                clip: rect(51px, 221px, 52px, 0px)
+            }
+            50% {
+                clip: rect(51px, 221px, 52px, 219px)
+            }
+            62.5% {
+                clip: rect(0px, 221px, 52px, 219px)
+            }
+            75% {
+                clip: rect(0px, 221px, 1px, 219px)
+            }
+            87.5% {
+                clip: rect(0px, 221px, 1px, 0px)
+            }
+            100% {
+                clip: rect(0px, 1px, 1px, 0px)
+            }
+        }
+    </style>
+    <div class="card">
+        <div id="wrapper">
+            <div id="my-icon">
+                <img src="images/hetic.png"></img>
+            </div>
+            <div id="my-info">
+                <h1>Contact HETIC</h1>
+                <p style=" text-align: justify;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                En tant que développeur, j'aime combler le fossé entre la fonctionnalité et le design. Mon objectif est de toujours créer des applications évolutives et efficaces sous le capot tout en offrant des expériences utilisateur attrayantes et parfaites au pixel
-                près. De plus, je suis très réactif aux besoins des clients et également engagé à aider les gens à réaliser leur vision.
-                <p>
-
-                </p>
-
-                <a class="status" href="images/myResume.pdf" target="_blank">
-                    <div class="status_light">
-                        <div class="status_light_ring"></div>
-                        <div class="status_light_led"></div>
-                    </div>
-                    <div class="status_message">
-                        Je suis à votre disposition.
-                        <span style="color:green"> Mon CV </span>
-                    </div>
-                </a>
-            </div>
-            <img class="photoBilly" src="images/Billy.jpg" alt="Billy" height="500px;" width="500px;">
-        </section>
-
-        <section class="section skills" data-aos="slide-up">
-            <div class="section_title">Compétences</div>
-            <div class="section_content">
-                <div class="skillz">
-                    <div class="skillz_category">
-                        <div class="skillz_category_label">
-                            Langages
-                        </div>
-                        <ul>
-                            <li class="skillz_category_item">HTML</li>
-                            <li class="skillz_category_item">CSS</li>
-                            <li class="skillz_category_item">JAVASCRIPT</li>
-                            <li class="skillz_category_item">PHP</li>
-                            <li class="skillz_category_item">JSON</li>
-                            <li class="skillz_category_item">AJAX</li>
-                            <li class="skillz_category_item">JAVA</li>
-                            <li class="skillz_category_item">UX / UI</li>
-                        </ul>
-                    </div>
-
-                    <div class="skillz_category">
-                        <div class="skillz_category_label">
-                            frameworks
-                        </div>
-                        <ul>
-                            <li class="skillz_category_item">REACT JS</li>
-                            <li class="skillz_category_item">JQUERY</li>
-                            <li class="skillz_category_item">BOOTSTRAP</li>
-                        </ul>
-                    </div>
-
-                    <div class="skillz_category">
-                        <div class="skillz_category_label">
-                            Outils
-                        </div>
-                        <ul>
-                            <li class="skillz_category_item">VISUAL STUDIO CODE</li>
-                            <li class="skillz_category_item">MYSQL</li>
-                            <li class="skillz_category_item">GIT & GITHUB</li>
-                            <li class="skillz_category_item">WAMP SERVER</li>
-                            <li class="skillz_category_item">NETBEANS</li>
-
-                        </ul>
-                    </div>
-
-                    <div class="skillz_category">
-                        <div class="skillz_category_label">
-                            Design
-                        </div>
-                        <ul>
-                            <li class="skillz_category_item">FIGMA</li>
-                            <li class="skillz_category_item">PHOTOSHOP</li>
-                            <!-- <li class="skillz_category_item">SKETCH</li> -->
-                            <!-- <li class="skillz_category_item">TYPOGRAPHY</li>
-                            <li class="skillz_category_item">USER TESTING</li> -->
-                        </ul>
-                    </div>
+                <div id="see-more">
+                    <a href="https://formulairecontacthetic.netlify.app/">Consulter</a>
                 </div>
             </div>
-        </section>
 
+        </div>
 
-        <section class="section experience">
-            <div class="section_title">
-                Experiences
-            </div>
-
-            <div class="section_content">
-                <div class="jobs">
-                    <div class="job">
-                        <div class="time-place">
-                            <div class="job_company">
-                                <a href="#" target="_blank">Stage dans la société Fokou Foberd</a>
-                            </div>
-                            <div class="job_time">
-                                Juillet 2019 - Aout 2019
-                            </div>
-                        </div>
-                        <div class="job_position">
-                            MISSION : Dévélopper une application de gestion des entrées et sorties du matériel informatique.
-                        </div>
+        <div id="wrapper">
+            <div class="wrapper2">
+                <div id="my-icon">
+                    <img src="images/lino_maker.png"></img>
+                </div>
+                <div id="my-info">
+                    <h1>Lino Maker</h1>
+                    <p style=" text-align: justify;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div id="see-more">
+                        <a href="#">Consulter</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="section other-projects" style="box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;">
-            <div class="section_title">Mes projets</div>
-            <div class="section_content">
-
-                <details>
-                    <summary>Mini réseau social modèle Reddit</summary>
-                    <div class="project">
-                        <p style="color:#bada55">conception et réalisation d'un mini réseau social doté d'un système de posts, commentaires, et de messagerie instantanée.</p>
-                        <div class="project_used">
-                            <span class="project_used_item">HTML</span>
-                            <span class="project_used_item">CSS</span>
-                            <span class="project_used_item">JAVASCRIPT</span>
-                            <span class="project_used_item">PHP</span>
-                            <span class="project_used_item">MYSQL</span>
-                        </div>
-                        <div class="project_links">
-                            <a href="#" target="_blank">
-                                <img src="images/rs.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                            <a href="#" target="_blank">
-                                <img src="images/wwwlogo.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                        </div>
-                    </div>
-                </details>
-
-                <details>
-                    <summary>Mini jeu modèle Mario</summary>
-                    <div class="project">
-                        <p style="color:#bada55">Nommé Lino Maker, c'est un jeu inspiré de Super Mario comptant 5 levels dont le but est d'accumuler autant de points posiible et de pièces, tuant les énemis en sautant sur eux.</p>
-                        <div class="project_used">
-                            <span class="project_used_item">HTML</span>
-                            <span class="project_used_item">CSS</span>
-                            <span class="project_used_item">JAVASCRIPT</span>
-                            <span class="project_used_item">PHP</span>
-                            <span class="project_used_item">MYSQL</span>
-                        </div>
-                        <div class="project_links">
-                            <a href="#" target="_blank">
-                                <img src="images/lino_maker.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                            <a href="#" target="_blank">
-                                <img src="images/wwwlogo.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                        </div>
-                    </div>
-                </details>
-
-                <details>
-                    <summary>Page contact HETIC</summary>
-                    <div class="project">
-                        <p style="color:#bada55">Comme vous pouvez le constater, c'est une des pages de contact de HETIC mise à la disôsition de tout un chacun.</p>
-                        <div class="project_used">
-                            <span class="project_used_item">HTML</span>
-                            <span class="project_used_item">CSS</span>
-                            <span class="project_used_item">JAVASCRIPT</span>
-                        </div>
-                        <div class="project_links">
-                            <a href="https://formulairecontacthetic.netlify.app/" target="_blank">
-                                <img src="images/hetic.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                            <a href="https://formulairecontacthetic.netlify.app/" target="_blank">
-                                <img src="images/wwwlogo.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                        </div>
-                    </div>
-                </details>
-
-                <details>
-                    <summary>Modèle click slide </summary>
-                    <div class="project">
-                        <p style="color:#bada55">Un modèle parmis tant d'autre de click slide qui vous permet de gérer plusieurs images et text en mode slide juste en cliquant sur chaqu'image.</p>
-                        <div class="project_used">
-                            <span class="project_used_item">HTML</span>
-                            <span class="project_used_item">CSS</span>
-                            <span class="project_used_item">JAVASCRIPT</span>
-                        </div>
-                        <div class="project_links">
-                            <a href="https://clickimageslide.netlify.app/" target="_blank">
-                                <img src="images/imgslide.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                            <a href="https://clickimageslide.netlify.app/" target="_blank">
-                                <img src="images/wwwlogo.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                        </div>
-                    </div>
-                </details>
-
-                <details>
-                    <summary>Boutique en ligne</summary>
-                    <div class="project">
-                        <p style="color:#bada55">Ici il s'agit juste un exemplaire parmis tant d'autre d'un modèle de page de boutique en ligne.</p>
-                        <div class="project_used">
-                            <span class="project_used_item">HTML</span>
-                            <span class="project_used_item">CSS</span>
-                        </div>
-                        <div class="project_links">
-                            <a href="https://boutiqueenligne.netlify.app/" target="_blank">
-                                <img src="images/mode&style.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                            <a href="https://boutiqueenligne.netlify.app/" target="_blank">
-                                <img src="images/wwwlogo.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                        </div>
-                    </div>
-                </details>
-
-                <details>
-                    <summary>Echéquier</summary>
-                    <div class="project">
-                        <p style="color:#bada55">Il s'agit ici d'un tableau de chess en mode click afin que les bordures de la case concernée soient rouge. </p>
-                        <div class="project_used">
-                            <span class="project_used_item">HTML</span>
-                            <span class="project_used_item">CSS</span>
-                            <span class="project_used_item">JAVASCRIPT</span>
-                        </div>
-                        <div class="project_links">
-                            <a href="#" target="_blank">
-                                <img src="images/chess.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                            <a href="#" target="_blank">
-                                <img src="images/wwwlogo.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                        </div>
-                    </div>
-                </details>
-
-                <details>
-                    <summary>To do list</summary>
-                    <div class="project">
-                        <p style="color:#bada55">Ici il s'agit juste un exemplaire parmis tant d'autre d'un modèle de to do list vous permettant de lister vos tâches de la journée de façon ordonnée.</p>
-                        <div class="project_used">
-                            <span class="project_used_item">HTML</span>
-                            <span class="project_used_item">CSS</span>
-                        </div>
-                        <div class="project_links">
-                            <a href="https://to-do-list-t.netlify.app/" target="_blank">
-                                <img src="images/todoliste.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                            <a href="https://to-do-list-t.netlify.app/" target="_blank">
-                                <img src="images/wwwlogo.png" alt="image" width="30px;" height="35px;">
-                            </a>
-                        </div>
-                    </div>
-                </details>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="footer_copyright">
-                <div class="top">
-                    <span style="color:#fff ;">
-	 				Designed &amp; Developed by
-				</span>
-                </div>
-                <div class="bottom">
-                    <span style="color:#fff ;">
-					Billy3Joe
-				</span>
-                    <img class="emoji" src="images/rockon.png" alt="emoji">
-                    <span style="color:#fff ;">
-					&copy; 2022 tous droits reservés.
-				</span>
-                </div>
-            </div>
-            <div class="footer_links">
-                <a href="images/myResume.pdf" target="_blank" class="arrow-link">Mon CV</a>
-                <a href="mailto:youremail@gmail.com" target="_blank" title="email">
-                    <span class="text">
-					billykamze3@gmail.com
-				</span>
-                    <img src="images/email.svg" alt="email">
-                </a>
-                <a href="https://www.linkedin.com/in/billy-joe-kom-kamze-075766228/" target="_blank" title="linkedin">
-                    <span class="text">
-					linkedin
-				</span>
-                    <img src="images/linkedin.svg" alt="linkedin">
-                </a>
-                <a href="https://github.com/Billy3Joe" target="_blank" title="instagram">
-                    <span class="text">
-					Github
-				</span>
-                    <img src="images/github.svg" alt="github" style="background-color: #fff; border-radius:3px;">
-                </a>
-
-                <a href="#" target="_blank" title="twitter">
-                    <span class="text">
-					Rosny-Sous-Bois
-				</span>
-                    <img src="images/localisation.jpg" alt="localisation" style="background-color: #fff; border-radius:3px;">
-                </a>
-
 
             </div>
-        </footer>
-        <button id="top-button" style="display: inline-block;"> 
-		<img src="images/finger-up-emoji-clipart-21.png" alt=""> 
-	</button>
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script type="text/javascript" src="main.js"></script>
+        </div>
+    </div>
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Portfolio<span>Billy3Joe</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a> ·
+                <a href="#">Projets</a> ·
+                <a href="#">Compétences</a> ·
+                <a href="#">A propos</a> ·
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Billy3Joe © 2022</p>
+
+            <div class="footer-icons">
+                <a href="#"><img src="images/email.svg" width="20px" height="20px" alt="email"></a>
+                <a href="https://github.com/Billy3Joe"><img src="images/github.svg" width="20px" height="20px" alt="github"></a>
+                <a href="https://www.linkedin.com/in/billy-joe-kom-kamze-075766228/"><img src="images/linkedin.svg" width="20px" height="20px" alt="linkedin"></a>
+                <a href="#"><img src="images/twitter.svg" width="20px" height="20px" alt="twitter"></a>
+                <a href="#"><img src="images/instagram.svg" width="20px" height="20px" alt="instagram"></a>
+                <a href="#"><img src="images/localisation.jpg" width="20px" height="20px" alt="localisation"></a>
+                <a href="images/myResume.pdf" target="_blank" class="arrow-link">CV</a>
+                <a href="#"><img src="images/arrow.png" width="20px" height="20px" alt="arrow"></a>
+                <!-- <a href="mailto:youremail@gmail.com" target="_blank" title="email"> -->
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <!-- <p>Contact</p> -->
+
+            <form action="#" method="post">
+
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+
+            </form>
+
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="main.js "></script>
 </body>
 
 </html>
