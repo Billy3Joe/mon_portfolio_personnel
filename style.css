@@ -225,6 +225,10 @@
         .learn-more {
             margin: 0 auto;
         }
+        .team-info-item.active .heading,
+        .team-info-item.active .content {
+            display: none;
+        }
     }
     /* Landscape phone to portrait tablet */
     
@@ -250,6 +254,10 @@
         .section-left {
             text-align: center;
             padding: 2em 0;
+        }
+        .team-info-item.active .heading,
+        .team-info-item.active .content {
+            display: none;
         }
     }
     /* Landscape phones and down */
@@ -307,6 +315,10 @@
         }
         .hidden-desktop {
             display: block;
+        }
+        .team-info-item.active .heading,
+        .team-info-item.active .content {
+            display: none;
         }
     }
     /*FIN CSS DE LA PARTIE HEADER*/
@@ -570,6 +582,8 @@
     
     .team-info .team-info-item.active {
         display: block;
+        padding: 30px;
+        margin-left: -77px;
     }
     
     @-webkit-keyframes team-info-item {
