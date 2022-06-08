@@ -26,23 +26,73 @@
                     </label>
                 <input type="checkbox" name="" id="open">
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">projets</a>
+                    <a href="index.html">Home</a>
+                    <a href="projets.html">projets</a>
                     <a href="#">Compétentces</a>
                     <a href="#">A propos</a>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                     <a href="images/CV.pdf" target="_blank" class="arrow-link">Mon cv</a>
 
                 </nav>
             </div>
         </div>
-        <header class="presentation">
+        <!-- <header class="presentation">
             <img src="images/Billy2.png" alt="John Doe" class="profile-image">
             <h1 class="tag name">Hello, I’m Billy Joe Kom Kamze.</h1>
             <p class="tag location">DEVELOPPEUR WEB (FRONT-RND & BACK-END)</p>
-        </header>
+        </header> -->
 
     </header>
+
+    <!-- Swiper -->
+    <div class="colored-container">
+
+        <div class="swiper-container verticle-animation">
+            <div class="halfbox team-info">
+                <li class="team-info-item active">
+                    <h1 class="heading">Salut, mon nom est Kom Kamze Billy Joe </h1>
+
+                    <article class="content">
+                        <p style="color:#fff; ">Je suisé étudiant enPrépa Mastère Digital à HETIC la grande <br> école du Web <br>La curiosité, le travail et la détermination font partis de mon quotidien
+                        </p>
+                    </article>
+                </li>
+            </div>
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                    <div class="slidebox">
+                        <div class="flex-left">
+                            <div class="bordered-img">
+                                <div class="tag-box" data-swiper-parallax="-300">
+                                    HETIC
+                                </div>
+                                <!-- <img src="http://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt=""> -->
+                                <img src="images/Billy4.png" alt="Billy4">
+                            </div>
+                        </div>
+
+                        <div class="content-box">
+                            <div class="title" data-swiper-parallax="-300">
+                                <span>KK</span>BJ
+                            </div>
+                            <div class="subtitle" data-swiper-parallax="-200">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, id.
+                            </div>
+                            <button class="btn btn-main">
+                  <a href="#">Contact</a>
+                </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
     <style>
         /* CSS DE LA PARTIE PRESENTATION */
         
@@ -52,36 +102,6 @@
             background-size: cover;
             overflow: hidden;
             padding-top: 60px;
-        }
-        
-        header {
-            line-height: 1.5;
-        }
-        
-        header .profile-image {
-            margin-top: 50px;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid white;
-            transition: all .5s;
-        }
-        
-        header .profile-image:hover {
-            transform: scale(1.2) rotate(5deg);
-        }
-        
-        .tag {
-            background-color: #efefef;
-            color: black;
-            padding: 10px;
-            display: table;
-            margin: 10px auto;
-        }
-        
-        .location {
-            background-color: #222;
-            color: yellow;
         }
     </style>
 
@@ -250,7 +270,10 @@
 
 
 
-    <footer class="footer-distributed">
+    <style>
+
+    </style>
+    <footer id="contact" class="footer-distributed">
 
         <div class="footer-left">
 
