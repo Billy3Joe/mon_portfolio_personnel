@@ -892,6 +892,13 @@
             position: absolute;
             display: block;
         }
+        .container h2,
+        .container-fluid h2 {
+            color: #e89a3d;
+            /* text-transform: uppercase; */
+            text-align: center;
+            font-size: 25px!important;
+        }
     }
     /*FIN  CSS DE LA PARTIE MES PROJETS*/
     /*DEBUT CSS DE LA PARTIE COMPETENCES*/
