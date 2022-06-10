@@ -72,12 +72,12 @@
         position: relative;
         width: 2em;
         height: 2em;
-        background: rgba(255, 255, 255, .3);
+        background: #fff;
         -webkit-transition: all .3s ease;
     }
     
     .header-right span:hover {
-        background: rgba(255, 255, 255, .6);
+        background: #fff;
     }
     
     .header-right span:before,
@@ -86,9 +86,9 @@
         position: absolute;
         width: 2em;
         height: .5em;
-        top: 4px;
+        top: 12px;
         left: 0;
-        background: black;
+        background: #a15e0c;
     }
     
     .header-right span:after {
@@ -452,7 +452,7 @@
     }
     
     .tag-box {
-        --size: 110px;
+        --size: 150px;
         background: var(--default-color);
         /*color: var(--dark-brown);*/
         border: 5px solid #fff;
@@ -461,7 +461,6 @@
         position: absolute;
         left: -95px;
         top: 70px;
-        font-size: 30px;
         text-transform: uppercase;
         display: flex;
         align-items: center;
@@ -619,78 +618,280 @@
     /*DEBUT  CSS DE LA PARTIE MES PROJETS*/
     
     body {
-        background-color: #212121;
+        /*padding-top: 56px;*/
+        position: relative;
+        font-size: 18px;
     }
     
-    a {
-        text-decoration: none;
+    .parallax-overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: rgba(0, 0, 0, 0.2);
+        filter: grayscale();
     }
     
-    h1 {
-        color: #FF9800;
+    .darker {
+        background: rgba(0, 0, 0, 0.5);
     }
     
-    #wrapper {
+    #home {
+        background-image: url("http://image.ibb.co/k8FMsv/computers.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        position: relative;
+    }
+    
+    #about {
+        background: #212121;
+    }
+    
+    .row {
         display: flex;
-        margin: 0 auto;
-        overflow: auto;
-        background-color: #212121;
-        box-shadow: 5px 5px 20px;
-    }
-    
-    .wrapper2 {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    
-    .card {
-        display: flex;
-        /* flex-wrap: wrap; */
+        align-items: center;
+        text-align: justify;
         gap: 20px;
+    }
+    /* #slogans {
+        background: rgba(0, 0, 0, 0.5);
+        height: 300px;
+        position: relative;
+        background-image: url("http://image.ibb.co/j7JwQF/devices2.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
+    
+    #portfolio {
+        background: #101010;
+        color: #e89a3d;
+    }
+    
+    #skills {
+        background: #101010;
+    }
+    
+    #contact {
+        background: rgba(0, 0, 0, 0.5);
+        position: relative;
+        background-image: url("http://image.ibb.co/c1NO5F/coding.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .container h2,
+    .container-fluid h2 {
+        color: #e89a3d;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    .container h2+p {
+        color: #fff;
+        text-align: center;
+    }
+    /* HOME SECTION */
+    
+    #home .container,
+    #home .row {
+        height: 100%;
+    }
+    
+    #home .main-info {
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 350px;
     }
     
-    #my-icon {}
-    
-    #my-icon img {
-        width: 405px;
-        height: 400px;
+    .main-info h2 {
+        font-size: 3rem;
     }
     
-    #my-info {
+    .main-info h3 {
+        font-size: 2rem;
+    }
+    
+    .main-info p {
+        margin-top: 25px;
+        font-size: 1.5rem;
+    }
+    /* END OF HOME SECTION */
+    /* ABOUT SECTION */
+    /* Couleur de la photos Billy1 noir /blanc*/
+    
+    #about img {
+        filter: grayscale(50);
+    }
+    /* END OF ABOUT SECTION */
+    /* PORTFOLIO SECTION */
+    
+    .portfolio-box {
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .portfolio-item {
+        width: 350px;
+        height: 350px;
         margin: 10px;
-        font-family: Sans-Serif;
-        color: white;
-        line-height: 150%;
-    }
-    
-    #my-info h1 {
-        text-transform: uppercase;
+        /*float: left;*/
+        overflow: hidden;
+        position: relative;
         text-align: center;
+        /*box-shadow: 1px 1px 2px #e6e6e6;*/
+        cursor: default;
+        border-radius: 5px;
     }
     
-    #see-more {
-        width: 200px;
-        height: 50px;
-        /* overflow: auto; */
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        background-color: black;
+    .portfolio-item .mask {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        background-color: rgba(86, 40, 0, 0.7);
+        width: 350px;
+        height: 350px;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .portfolio-item img {
+        display: block;
+        position: relative;
+        transition: all 0.2s linear;
+    }
+    
+    .portfolio-item h3 {
         text-transform: uppercase;
+        color: #fff;
         text-align: center;
-        vertical-align: middle;
-        line-height: 50px;
-        transition: 0.2s ease-out;
+        position: relative;
+        font-size: 1rem;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        margin: 35px 0 0 0;
+        transform: translateY(-100px);
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
     }
     
-    #see-more:hover {
-        transition: .7s ease;
-        background-color: #FF9800;
-        border: 2px solid#fff;
+    .portfolio-item p {
+        font-family: Georgia, serif;
+        font-style: italic;
+        font-size: 0.9rem;
+        position: relative;
+        color: #fff;
+        padding: 30px 20px 20px;
+        text-align: center;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 0.2s linear;
+    }
+    
+    .portfolio-item a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        background: #101010;
+        color: #fff;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        box-shadow: 0 0 1px #000;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        position: absolute;
+        bottom: 35px;
+        left: 120px;
+    }
+    
+    .portfolio-item a:hover {
+        box-shadow: 0 0 5px #000;
+    }
+    
+    .portfolio-item:hover img {
+        transform: scale(1.1);
+    }
+    
+    .portfolio-item:hover .mask {
+        opacity: 1;
+    }
+    
+    .portfolio-item:hover h3,
+    .portfolio-item:hover p,
+    .portfolio-item:hover a {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+    .portfolio-item:hover p {
+        transition-delay: 0.1s;
+    }
+    
+    .portfolio-item:hover a {
+        transition-delay: 0.2s;
+    }
+    /* END OF PORTFOLIO SECTION */
+    
+    @media (max-width: 575px) {
+        #home {
+            background-image: url("http://image.ibb.co/k8FMsv/computers.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20vh;
+            position: relative;
+        }
+        #home .main-info {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-left: 0px;
+            width: 415px;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            text-align: justify;
+            gap: 20px;
+            flex-direction: column;
+        }
+        #contact {
+            background: rgba(0, 0, 0, 0.5);
+            background-position-x: 0%;
+            background-position-y: 0%;
+            background-repeat: repeat;
+            background-image: none;
+            background-size: auto;
+            position: relative;
+            background-image: url("http://image.ibb.co/c1NO5F/coding.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bordered-img:before,
+        .bordered-img:after {
+            content: '';
+            border: 8px solid #fff;
+            /* width: 100%; */
+            height: 96%;
+            position: absolute;
+            display: block;
+        }
     }
     /*FIN  CSS DE LA PARTIE MES PROJETS*/
     /*DEBUT CSS DE LA PARTIE COMPETENCES*/
@@ -706,17 +907,6 @@
         text-align: left;
         padding: 50px 60px 40px;
         overflow: hidden;
-    }
-    
-    section {
-        width: 100%;
-        display: inline-block;
-        background: #ccc;
-        height: 60vh;
-        text-align: center;
-        font-size: 22px;
-        font-weight: 700;
-        text-decoration: underline;
     }
     /* Footer left */
     

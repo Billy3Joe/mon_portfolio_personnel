@@ -26,10 +26,10 @@
                     </label>
                 <input type="checkbox" name="" id="open">
                 <nav>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Accueil</a>
                     <a href="projets.html">projets</a>
                     <a href="#">Compétentces</a>
-                    <a href="#">A propos</a>
+                    <a href="#about">A propos</a>
                     <a href="#contact">Contact</a>
                     <a href="images/CV.pdf" target="_blank" class="arrow-link">Mon cv</a>
 
@@ -50,7 +50,7 @@
         <div class="swiper-container verticle-animation">
             <div class="halfbox team-info">
                 <li class="team-info-item active">
-                    <h1 class="heading" style="padding: 15px;">Je suis Kom Kamze Billy Joe </h1>
+                    <h1 class="heading" style=" color: #e89a3d;padding: 15px;">Je suis Kom Kamze Billy Joe </h1>
 
                     <article class="content">
                         <p style="color:#fff; padding: 15px;">Je suis étudiant en Prépa Mastère Digital à HETIC la grande <br> école du Web <br>La curiosité, le travail et la détermination me distingue en tout
@@ -62,9 +62,9 @@
                     </aside>
                 </li>
             </div>
+
+
             <div class="swiper-wrapper">
-
-
                 <div class="swiper-slide">
                     <div class="slidebox">
                         <div class="flex-left">
@@ -82,10 +82,10 @@
                                 <span>KK</span>BJ
                             </div>
                             <div class="subtitle" data-swiper-parallax="-200">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, id.
+                                Qu'importe ce que vous faites; faites cela avec passion et amour !.
                             </div>
                             <button class="btn btn-main">
-                  <a href="#">Contact</a>
+                  <a href="#contact">Contact</a>
                 </button>
                         </div>
 
@@ -228,50 +228,92 @@
             }
         }
     </style>
-    <div class="card">
-        <div id="wrapper">
-            <div id="my-icon">
-                <img src="images/hetic.png"></img>
-            </div>
-            <div id="my-info">
-                <h1>Contact HETIC</h1>
-                <p style=" text-align: justify;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <div id="see-more">
-                    <a href="https://formulairecontacthetic.netlify.app/">Consulter</a>
-                </div>
-            </div>
 
-        </div>
 
-        <div id="wrapper">
-            <div class="wrapper2">
-                <div id="my-icon">
-                    <img src="images/todoliste.png"></img>
-                </div>
-                <div id="my-info">
-                    <h1>To Do List</h1>
-                    <p style=" text-align: justify;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <div id="see-more">
-                        <a href="https://to-do-list-t.netlify.app/">Consulter</a>
+
+
+
+
+
+    <section id="home">
+        <div class="parallax-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <div class="main-info">
+                        <h2>Developpeur web</h2>
+                        <p>Disponible pour vous !</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-    </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <img class="img-fluid rounded" src="images/Billy1.png" alt="Billy1">
+                </div>
+                <div class="col-12 col-sm-6" style="color: #fff;">
+                    <p>Avant d'intégrer HETIC, la grande école du Web, j'ai étudié à l'Institut Universitaire du Golfe de Guinée (IUG) en Gestion des Systèmes d'Information (GSI). Après avoir été couronné par un BTS avec mention bien, j'ai résolu par la
+                        suite d'intégrer HETIC car je souhaite devenir un expert en développement web.
+                    </p><br>
+                    <p>Il n'est pas si difficile d'écrire une application de travail. Et pas mal de gens peuvent faire face à cela. Mais, quant à moi, il y a une nuance importante qui distingue les bons développeurs. Un bon développeur analyse toujours le
+                        sien et tout autre code. Par conséquent, il ne fonctionne pas seulement, mais aussi un code propre, auto-documenté et compréhensible, dans lequel il n'y a rien de superflu, qui fonctionne rapidement et consomme le moins de ressources
+                        possible - c'est mon principe principal et mon objectif.</p><br>
+                    <p>C'est pourquoi ma dévise à moi est: Motivation , Travail et Détermination. J'aime ce que je fais. J'aime expérimenter, trouver des solutions et créer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
-    <style>
+    <section id="portfolio">
+        <div class="container">
+            <div class="main-info">
+                <h2>Mes projets web</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row portfolio-box">
+                <div class="portfolio-item">
+                    <img class="img-fluid" src="images/hetic.png" alt="Hetic">
+                    <div class="mask">
+                        <h3>Formulaire contact HETIC</h3>
+                        <p>A travers ce formulaire de conact, vous pouvez vous renseignez sur l'école, poser vos questions ou autre chose.</p>
+                        <a href="https://formulairecontacthetic.netlify.app/" class="info-button" target="_blank">Consulter</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img class="img-fluid" src="images/todoliste.png" alt="To do list">
+                    <div class="mask">
+                        <h3>To Do List</h3>
+                        <p>A travers cette To Do List, vous pouvez listez de manière ordonnée tous vos tâches journalières.</p>
+                        <a href="https://to-do-list-t.netlify.app/" class="info-button" target="_blank">Consulter</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img class="img-fluid" src="images/Cominsun.png" alt="Twitch TV">
+                    <div class="mask">
+                        <h3>Coming-Soon</h3>
+                        <p>Il s'agit juste d'une interface qui vous permet de vérifier si un adress email est valide.</p>
+                        <a href="#" class="info-button" target="_blank">Consulter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </style>
+
+
+    <!-- 
+    <footer>
+        <p>&copy; Serhii Ivanenko, 2017</p>
+    </footer> -->
+
+
     <footer id="contact" class="footer-distributed">
 
         <div class="footer-left">
