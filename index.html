@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
     <link rel="shortcut icon" href="images/bj.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,7 +50,7 @@
     <div class="colored-container">
 
         <div class="swiper-container verticle-animation">
-            <div class="halfbox team-info">
+            <div class="halfbox team-info" data-aos="fade-right" data-aos-duration="3000">
                 <li class="team-info-item active">
                     <h1 class="heading" style=" color: #e89a3d;padding: 15px;">Je suis Kom Kamze Billy Joe </h1>
 
@@ -66,7 +68,7 @@
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="slidebox">
+                    <div class="slidebox" data-aos="fade-left" data-aos-duration="3000">
                         <div class="flex-left">
                             <div class="bordered-img">
                                 <div class="tag-box" data-swiper-parallax="-300">
@@ -85,8 +87,8 @@
                                 Qu'importe ce que vous faites; faites cela avec passion et amour !.
                             </div>
                             <button class="btn btn-main">
-                  <a href="#contact">Contact</a>
-                </button>
+                             <a href="#contact">Contact</a>
+                            </button>
                         </div>
 
                     </div>
@@ -237,7 +239,7 @@
 
     <section id="home">
         <div class="parallax-overlay"></div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in" data-aos-duration="3000">
             <div class="row align-items-center">
                 <div class="col-12 text-center">
                     <div class="main-info">
@@ -253,9 +255,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <img class="img-fluid rounded" src="images/Billy3.png" width="380px" alt="Billy1">
+                    <img class="img-fluid rounded" src="images/Billy3.png" width="380px" alt="Billy1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                 </div>
-                <div class="col-12 col-sm-6" style="color: #fff;">
+                <div class="col-12 col-sm-6" style="color: #fff;" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                     <p>Avant d'intégrer HETIC, la grande école du Web, j'ai étudié à l'Institut Universitaire du Golfe de Guinée (IUG) en Gestion des Systèmes d'Information (GSI). Après avoir été couronné par un BTS avec mention bien, j'ai résolu par la
                         suite d'intégrer HETIC car je souhaite devenir un expert en développement web.
                     </p><br>
@@ -361,6 +363,10 @@
 
     </footer>
     <script type="text/javascript" src="main.js "></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 
 </html>
