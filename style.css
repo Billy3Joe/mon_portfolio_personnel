@@ -48,6 +48,9 @@
                         width: 100%;
                         height: auto;
                         background-color: #212121;
+                        position: sticky;
+                        top: 0;
+                        z-index: 100;
                     }
                     
                     .header-left,

@@ -10,6 +10,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
+
+    <!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js" defer></script> -->
+
+
 </head>
 
 <body>
@@ -50,7 +55,7 @@
     <div class="colored-container">
 
         <div class="swiper-container verticle-animation">
-            <div class="halfbox team-info" data-aos="fade-right" data-aos-duration="3000">
+            <div class="halfbox team-info" data-aos="zoom-in-right" data-aos-duration="3000">
                 <li class="team-info-item active">
                     <h1 class="heading" style=" color: #e89a3d;padding: 15px;">Je suis Kom Kamze Billy Joe </h1>
 
@@ -68,11 +73,11 @@
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="slidebox" data-aos="fade-left" data-aos-duration="3000">
+                    <div class="slidebox" data-aos="zoom-in-right" data-aos-duration="3000">
                         <div class="flex-left">
                             <div class="bordered-img">
                                 <div class="tag-box" data-swiper-parallax="-300">
-                                    HETIC
+                                    WEB
                                 </div>
                                 <!-- <img src="http://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt=""> -->
                                 <img src="images/Billy4.png" alt="Billy4">
@@ -240,8 +245,7 @@
     </head>
 
     <div id="container">
-        <div id="toggleContainer">
-            <h1 style="color:#fff ; margin-right: 300px;">MES PROJETS</h1>
+        <div id="toggleContainer" data-aos="fade-down" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000">
             <label>Carousel</label>
             <div id="toggle">
                 <div id="outer3">
@@ -251,7 +255,7 @@
             </div>
         </div>
         <div id="galleryView">
-            <div id="galleryContainer">
+            <div id="galleryContainer" data-aos="fade-up" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="2000">
                 <div id="leftView"></div>
                 <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
                 <a id="linkTag">
@@ -273,8 +277,10 @@
     </button>
 
 
+
+
     <footer id="footer">
-        <div id="utility-links">
+        <div id="utility-links" data-aos="zoom-in" data-aos-duration="3000">
 
             <div class="help">
                 <ul>
@@ -307,7 +313,7 @@
             </div>
         </div>
 
-        <div class="followMe">
+        <div class="followMe" data-aos="zoom-in" data-aos-duration="3000">
             <h3 class="center">Follow Me On!</h3>
             <div id="social">
                 <a href="https://www.linkedin.com/in/billy3joe/" target="_blank">
@@ -370,7 +376,7 @@
     <script>
         AOS.init();
     </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+
 </body>
 
 </html>
