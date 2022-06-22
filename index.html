@@ -13,55 +13,47 @@
 
     <!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js" defer></script> -->
+    <!-- data-aos="fade-up" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="2000" -->
 
 
 </head>
 
 <body>
-    <header class="clearfix">
-        <div class="container">
-            <div class="header-left">
-                <div style="display: flex; align-items: center; gap: 7px;">
-                    <h1>Salut</h1>
-                    <img src="images/waving-hand.png" width="40px" height="40px" alt="Salut">
-                </div>
-
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/bj.jpg" alt="Logo Image">
             </div>
-            <div class="header-right">
-                <label for="open">
-                        <span class="hidden-desktop"></span>
-                    </label>
-                <input type="checkbox" name="" id="open">
-                <nav>
-                    <a style="color: #fff;" href="index.html">Accueil</a>
-                    <a style="color: #fff;" href="projets.html">projets</a>
-                    <a style="color: #fff;" href="#">Compétentces</a>
-                    <a style="color: #fff;" href="#about">A propos</a>
-                    <a style="color: #fff;" href="#contact">Contact</a>
-                    <a style="color: #fff;" href="images/CV.pdf" target="_blank" class="arrow-link">Mon cv</a>
-
-                </nav>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-        </div>
-        <!-- <header class="presentation">
-            <img src="images/Billy2.png" alt="John Doe" class="profile-image">
-            <h1 class="tag name">Hello, I’m Billy Joe Kom Kamze.</h1>
-            <p class="tag location">DEVELOPPEUR WEB (FRONT-RND & BACK-END)</p>
-        </header> -->
-
+            <ul class="nav-links">
+                <li><a href="index.html" style="color: #fff;">Accueil</a></li>
+                <li><a href="projets.html" style="color: #fff;">Projets</a></li>
+                <li><a href="#" style="color: #fff;">Compétences</a></li>
+                <li><a href="#about" style="color: #fff;">A propos</a></li>
+                <li><a href="#contact" style="color: #fff;">Contact</a></li>
+                <li><a style="color: #fff;" href="images/CV.pdf" target="_blank" class="arrow-link">Mon cv</a></li>
+                <li><button class="login-button" href="#">Mon Github</button></li>
+                <li><button class="join-button" href="#">Mon Linkedin</button></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Swiper -->
-    <div class="colored-container">
 
+    <div class="colored-container">
         <div class="swiper-container verticle-animation">
             <div class="halfbox team-info" data-aos="zoom-in-right" data-aos-duration="3000">
                 <li class="team-info-item active">
-                    <h1 class="heading" style=" color: #e89a3d;padding: 15px;">Je suis Kom Kamze Billy Joe </h1>
+
+                    <h1 class="heading" style=" color: #e89a3d;padding: 35px;">Je suis Kom Kamze Billy Joe </h1>
 
                     <article class="content">
-                        <p style="color:#fff; padding: 15px;">Je suis étudiant en Prépa Mastère Digital à HETIC la grande <br> école du Web <br>La curiosité, le travail et la détermination me distingue en tout
+                        <p class="description">Je suis étudiant en Prépa Mastère Digital à HETIC la grande <br> école du Web <br>La curiosité, le travail et la détermination me distingue en tout
                         </p>
+
                     </article>
                     <aside class="loading">
                         <a href="projets.html" class="text">Mes projets</a>
@@ -69,7 +61,6 @@
                     </aside>
                 </li>
             </div>
-
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -114,162 +105,57 @@
         }
     </style> -->
 
-    <!-- DEBUT CSS DU BOUTON MES PROJETS -->
-    <style>
-        aside {
-            margin: auto;
-            width: 222px;
-            height: 52px;
-            margin-top: 50px;
-        }
-        
-        .loading {
-            background-color: #FF9800;
-            text-transform: uppercase;
-            font-size: 16px;
-            padding: 3px;
-            -webkit-background-size: 130% 130%;
-            background-size: 130%;
-            -webkit-filter: hue-rotate(10deg);
-            height: 52px;
-            line-height: 46px;
-            color: white;
-            text-align: center;
-            position: relative;
-            bottom: 13px;
-            right: 120px;
-        }
-        
-        .text,
-        .border {
-            cursor: pointer;
-            font-weight: lighter;
-            z-index: 5;
-            position: absolute;
-            left: 4px;
-            top: 4px;
-            bottom: 2px;
-            right: 3px;
-            display: block;
-            border: 1px solid rgba(0, 0, 0, 0.4);
-            color: #000;
-            -webkit-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
-        }
-        
-        .text {
-            top: 4px;
-            text-decoration: none;
-        }
-        
-        .border {
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            color: #000;
-            clip: rect(0, 0, 0, 0);
-            -webkit-animation: maskBorder 5s infinite;
-            animation: maskBorder 5s infinite;
-        }
-        
-        .text:hover {
-            border: 3px solid #fff;
-            color: #fff;
-        }
-        
-        @-webkit-keyframes maskBorder {
-            0% {
-                clip: rect(0px, 1px, 1px, 0px)
-            }
-            12.5% {
-                clip: rect(0px, 1px, 52px, 0px)
-            }
-            25% {
-                clip: rect(51px, 1px, 52px, 0px)
-            }
-            37.5% {
-                clip: rect(51px, 221px, 52px, 0px)
-            }
-            50% {
-                clip: rect(51px, 221px, 52px, 219px)
-            }
-            62.5% {
-                clip: rect(0px, 221px, 52px, 219px)
-            }
-            75% {
-                clip: rect(0px, 221px, 1px, 219px)
-            }
-            87.5% {
-                clip: rect(0px, 221px, 1px, 0px)
-            }
-            100% {
-                clip: rect(0px, 1px, 1px, 0px)
-            }
-        }
-        
-        @keyframes maskBorder {
-            0% {
-                clip: rect(0px, 1px, 1px, 0px)
-            }
-            12.5% {
-                clip: rect(0px, 1px, 52px, 0px)
-            }
-            25% {
-                clip: rect(51px, 1px, 52px, 0px)
-            }
-            37.5% {
-                clip: rect(51px, 221px, 52px, 0px)
-            }
-            50% {
-                clip: rect(51px, 221px, 52px, 219px)
-            }
-            62.5% {
-                clip: rect(0px, 221px, 52px, 219px)
-            }
-            75% {
-                clip: rect(0px, 221px, 1px, 219px)
-            }
-            87.5% {
-                clip: rect(0px, 221px, 1px, 0px)
-            }
-            100% {
-                clip: rect(0px, 1px, 1px, 0px)
-            }
-        }
-    </style>
-    <!-- FIN CSS DU BOUTON MES PROJETS -->
-
-    <!--DEBUT HTML DE LA PARTIE PROJET -->
-
-    <head>
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
-        <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
-    </head>
-
-    <div id="container">
-        <div id="toggleContainer" data-aos="fade-down" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000">
-            <label>Carousel</label>
-            <div id="toggle">
-                <div id="outer3">
-                    <div id="slider3"></div>
+    <!--DEBUT HTML DE LA PARTIE PROJETS -->
+    <!--- Start Slider --->
+    <Section id="slider">
+        <div class="slider-container">
+            <!-- Start Slides -->
+            <div id="slides">
+                <div class="slide">
+                    <a href="https://formulairecontacthetic.netlify.app/"><img class="img" src="images/hetic.png" alt="Formulaire HETIC"></a>
+                    <div class="caption">
+                        <h1>Formulaire de Contact HETIC</h1><br><br><br><br><br>
+                        <p>A travers ce formulaire de conact, vous pouvez vous renseignez sur l'école, poser vos questions ou autre chose.</p>
+                    </div>
                 </div>
-                <label>Tiles</label>
+                <div class="slide">
+                    <a href="https://to-do-list-t.netlify.app/"><img class="img" src="images/todoliste.png" alt="To Do Liste"></a>
+                    <div class="caption">
+                        <h1>To Do Liste</h1><br><br><br><br><br>
+                        <p>A travers cette To Do List, vous pouvez listez de manière ordonnée tous vos tâches journalières.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <a href="#"><img class="img" src="images/Cominsun.png" alt="To Do Liste"></a>
+                    <div class="caption">
+                        <h1>Coming-Soon</h1><br><br><br><br><br>
+                        <p>Il s'agit juste d'une interface qui vous permet de vérifier si un adress email est valide.</p>
+                    </div>
+                </div>
+                <!-- <div class="slide">
+                    <a href="#"><img class="img" src="images/lino_maker.png" alt="Lino Maker"></a>
+                    <div class="caption">
+                        <h1>Lino Maker style Mario</h1><br><br><br><br><br>
+                        <p>
+                            Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
+                        </p>
+                    </div>
+                </div> -->
             </div>
+
+            <!-- End Slides -->
+
+            <!-- Start Timeline -->
+            <span class="timeline"></span>
+            <!-- End Timeline -->
         </div>
-        <div id="galleryView">
-            <div id="galleryContainer" data-aos="fade-up" data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="2000">
-                <div id="leftView"></div>
-                <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
-                <a id="linkTag">
-                    <div id="mainView"></div>
-                </a>
-                <div id="rightView"></div>
-                <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
-            </div>
-        </div>
-        <div id="tilesView">
-            <div id="tilesContainer"></div>
-        </div>
-    </div>
-    <!--FIN HTML DE LA PARTIE PROJET -->
+    </Section>
+    <!--- End Slider --->
+    <!--FIN HTML DE LA PARTIE PROJETS -->
+    <!--DEBUT HTML DE LA PARTIE COMPETENCE -->
+
+
+    <!--FIN HTML DE LA PARTIE COMPETENCE -->
 
 
     <button class="scroll-top">
@@ -376,7 +262,6 @@
     <script>
         AOS.init();
     </script>
-
 </body>
 
 </html>
