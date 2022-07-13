@@ -575,7 +575,7 @@ header {
     /* Don't allow the image to exceed its original height */
     max-height: 568px;
     display: block;
-    height: 58%;
+    height: 100%;
     width: auto;
     margin: 0 auto;
     opacity: 0;
