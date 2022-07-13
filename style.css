@@ -52,6 +52,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    z-index:1;
 }
 
 
@@ -147,7 +148,7 @@ header {
     font-size: 0.8rem;
     position: sticky;
     top: 0px;
-    z-index: 100px;
+    z-index: 100!important;
 }
 
 .main-nav {
