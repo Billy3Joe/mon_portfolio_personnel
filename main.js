@@ -1,19 +1,3 @@
-//DEBUT JS DU HEADER
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
-
-hamburger.addEventListener('click', () => {
-    //Animate Links
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
-
-    //Hamburger Animation
-    hamburger.classList.toggle("toggle");
-});
-//FIN JS DU HEADER
 //DEBUT JS DE LA SCROLL TOP
 // NOTICE: This pen may appear to not work on mobile devices, but it is  due to the codepen footer and the browser's bottom menu bar that hide the button. It should work fine when implemented for your website
 
@@ -104,31 +88,3 @@ function SVS_B(eAmt, where) {
     }
 }
 //FIN JS DE LA SCROLL TOP
-
-//DEBUT JS DE LA PARTIE PROET
-
-function prev() {
-    document.getElementById('slider-container').scrollLeft -= 270;
-}
-
-function next() {
-    document.getElementById('slider-container').scrollLeft += 270;
-}
-
-
-$(".slide img").on("click", function() {
-    $(this).toggleClass('zoomed');
-    $(".overlay").toggleClass('active');
-})
-
-//FIN JS DE LA PARTIE PROJET
-
-//DEBUT JS DE LA PARTIE COMPETENCE
-
-
-//FIN JS DE LA PARTIE COMPETENCE
-
-
-//DEBUT JS DE LA PARTIE CHAT
-
-//FIN JS DE LA PARTIE CHAT
